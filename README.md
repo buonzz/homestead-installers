@@ -24,18 +24,12 @@ This is a bunch of utility scripts that can install other software/tools to your
 
 ## Installation
 
-Clone the main Homestead repo first. Then edit this file
+Make sure you have a Homestead installed first before proceeding to this instructions. You can find instruction on how to install Homestead [here](https://laravel.com/docs/5.2/homestead#first-steps).
+
+Once you have Homestead installed, clone the installer repo inside the homestead folder:
 
 ```
-cd ~
-git clone https://github.com/laravel/homestead.git
-cd homestead
-bash init.sh
-```
-
-Then clone the installer repo
-
-```
+cd ~/homestead
 git clone https://github.com/buonzz/homestead-installers.git
 ```
 
@@ -55,6 +49,7 @@ Now provision the box
 
 ```
 cd ~/homestead
-vagrant up
+vagrant provision
 ```
 
+After the provisioning script is installed, several commands is now available when you login to your Homestead box. see usage section to see individual commands.
