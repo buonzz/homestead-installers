@@ -48,7 +48,7 @@ vi ~/.homestead/after.sh
 add the following code
 
 ```
-sudo bash /vagrant/homestead_installers/init.sh
+sudo bash /vagrant/homestead-installers/init.sh
 ```
 
 Now provision the box
