@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cd /vagrant/homestead-installers
+git pull origin master
+
 # move the installers
 sudo cp /vagrant/homestead-installers/setup_oracle_java.sh /usr/local/bin/setup_oracle_java
 sudo chmod +x /usr/local/bin/setup_oracle_java

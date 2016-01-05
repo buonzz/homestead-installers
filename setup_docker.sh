@@ -10,6 +10,9 @@ sudo apt-get update
 sudo apt-get purge lxc-docker
 sudo apt-get install docker-engine -y
 
+# add vagrant user to docker group
+sudo usermod -aG docker vagrant
+
 # test the installation
 
 sudo service docker start
