@@ -18,3 +18,6 @@ sudo chmod +x /usr/local/bin/setup_frontend_tools
 
 sudo cp /vagrant/homestead-installers/all.sh /usr/local/bin/setup_all_tools
 sudo chmod +x /usr/local/bin/setup_all_tools
+
+sudo cp /vagrant/homestead-installers/setup_docker.sh /usr/local/bin/setup_docker
+sudo chmod +x /usr/local/bin/setup_docker
