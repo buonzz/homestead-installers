@@ -20,6 +20,7 @@ This is a bunch of utility scripts that can install other software/tools to your
 * Oracle Java
 * Ruby
 * Apache Tomcat
+* Docker
 
 
 ## Installation
