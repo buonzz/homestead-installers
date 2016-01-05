@@ -1,7 +1,11 @@
 #!/bin/bash
 
-sudo apt-get update
-
-sudo apt-get install ruby1.9.1 ruby1.9.1-dev \
-  rubygems1.9.1 irb1.9.1 ri1.9.1 rdoc1.9.1 \
-  build-essential libopenssl-ruby1.9.1 libssl-dev zlib1g-dev -y
+sudo apt-get -y update
+sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev
+cd /tmp
+wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.0.tar.gz
+tar -xvzf ruby-2.3.0.tar.gz
+cd ruby-2.3.0/
+./configure --prefix=/usr/local
+make
+sudo make install
