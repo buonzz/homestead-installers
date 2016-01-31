@@ -23,3 +23,6 @@ sudo chmod +x /usr/local/bin/setup_all_tools
 
 sudo cp /vagrant/homestead-installers/setup_docker.sh /usr/local/bin/setup_docker
 sudo chmod +x /usr/local/bin/setup_docker
+
+sudo cp /vagrant/homestead-installers/setup_elasticsearch.sh /usr/local/bin/setup_elasticsearch
+sudo chmod +x /usr/local/bin/setup_elasticsearch
