@@ -26,3 +26,6 @@ sudo chmod +x /usr/local/bin/setup_docker
 
 sudo cp /vagrant/homestead-installers/setup_elasticsearch.sh /usr/local/bin/setup_elasticsearch
 sudo chmod +x /usr/local/bin/setup_elasticsearch
+
+sudo cp /vagrant/homestead-installers/setup_maven.sh /usr/local/bin/setup_maven
+sudo chmod +x /usr/local/bin/setup_maven
