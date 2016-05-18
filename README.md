@@ -54,3 +54,16 @@ vagrant provision
 ```
 
 After the provisioning script is installed, several commands is now available when you login to your Homestead box. see usage section to see individual commands.
+
+
+### ELK Stack
+
+When you would like to setup ElasticSearch,Logstash and Kibana. You might need to change the Homestead.yaml so that ports can be mapped properly. Edit the ~/.homestead/Homestead.yaml
+
+```
+ports:
+     - send: 9200
+       to: 9200
+     - send: 5601
+       to: 5601
+```
