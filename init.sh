@@ -30,6 +30,9 @@ sudo chmod +x /usr/local/bin/setup_elasticsearch
 sudo cp /vagrant/homestead-installers/setup_kibana.sh /usr/local/bin/setup_kibana
 sudo chmod +x /usr/local/bin/setup_kibana
 
+sudo cp /vagrant/homestead-installers/setup_elk.sh /usr/local/bin/setup_elk
+sudo chmod +x /usr/local/bin/setup_elk
+
 sudo cp /vagrant/homestead-installers/setup_logstash.sh /usr/local/bin/setup_logstash
 sudo chmod +x /usr/local/bin/setup_logstash
 
