@@ -38,3 +38,6 @@ sudo chmod +x /usr/local/bin/setup_logstash
 
 sudo cp /vagrant/homestead-installers/setup_maven.sh /usr/local/bin/setup_maven
 sudo chmod +x /usr/local/bin/setup_maven
+
+sudo cp /vagrant/homestead-installers/setup_box.sh /usr/local/bin/setup_box
+sudo chmod +x /usr/local/bin/setup_box
