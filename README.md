@@ -25,36 +25,107 @@ This is a bunch of utility scripts that can install other software/tools to your
 
 ## Installation
 
-Make sure you have a Homestead installed first before proceeding to this instructions. You can find instruction on how to install Homestead [here](https://laravel.com/docs/5.2/homestead#first-steps).
+Make sure you have a Homestead installed first before proceeding to this instructions. You can find instruction on how to install Homestead [here](https://laravel.com/docs/5.5/homestead#first-steps).
 
-Once you have Homestead installed, clone the installer repo inside the homestead folder:
+Once you have Homestead installed, login to the VM
 
 ```
-cd ~/homestead
+cd ~/Homestead # should be where you cloned the homestead repo
+vagrant ssh # login to the homestead box, you might need to vagrant first if its not running
+```
+
+
+clone the installer repo inside the /vagrant folder:
+
+```
+cd /vagrant
 git clone https://github.com/buonzz/homestead-installers.git
 ```
 
-edit after.sh in .homestead folder
-
+now initialize the installers
 ```
-vi ~/.homestead/after.sh
-```
-
-add the following code
-
-```
-sudo bash /vagrant/homestead-installers/init.sh
-```
-
-Now provision the box
-
-```
-cd ~/homestead
-vagrant provision
+cd /vagrant/homestead-installers
+./init.sh
 ```
 
 After the provisioning script is installed, several commands is now available when you login to your Homestead box. see usage section to see individual commands.
 
+
+### Usage
+
+Install Oracle Java
+
+```
+setup_oracle_java
+```
+
+
+Install Docker
+
+```
+setup_docker
+```
+
+
+Install Ruby
+
+```
+setup_ruby
+```
+
+
+Install ElasticSearch
+```
+setup_elasticsearch
+```
+
+Install Kibana
+```
+setup_kibana
+```
+
+Install Logstash
+```
+setup_logstash
+```
+
+Or you can simply install ELK stack in one command
+
+```
+setup_elk.sh
+```
+
+
+Install Maven
+
+```
+setup_maven
+```
+
+
+Install Box Command
+
+```
+setup_box
+```
+
+Install Frontend Tools
+
+```
+setup_frontend_tools
+```
+
+Install Jekyll
+
+```
+setup_jekyll
+```
+
+Install Tomcat
+
+```
+setup_tomcat
+```
 
 ### ELK Stack
 
