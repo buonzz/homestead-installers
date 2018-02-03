@@ -6,4 +6,4 @@ fi
 
 git clone git://github.com/casperjs/casperjs.git
 cd casperjs
-ln -sf `pwd`/bin/casperjs /usr/local/bin/casperjs
+sudo ln -sf /vagrant/homestead-installers/casperjs/bin/casperjs /usr/local/bin/casperjs
