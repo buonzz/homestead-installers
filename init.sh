@@ -41,3 +41,6 @@ sudo chmod +x /usr/local/bin/setup_maven
 
 sudo cp /vagrant/homestead-installers/setup_box.sh /usr/local/bin/setup_box
 sudo chmod +x /usr/local/bin/setup_box
+
+sudo cp /vagrant/homestead-installers/setup_phantomjs.sh /usr/local/bin/setup_phantomjs
+sudo chmod +x /usr/local/bin/setup_phantomjs
